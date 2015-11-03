@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Supersonic.framework'
   s.license = 'MIT'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Supersonic"' }
-  s.framework = 'AVFoundation', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'SystemConfiguration', 'CoreGraphics', 'CFNetwork', 'MobileCoreServices', 'StoreKit', 'AdSupport', 'CoreLocation', 'CoreTelephony', 'Security', 'libz.tbd' 
+  s.framework = 'AVFoundation', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'SystemConfiguration', 'CoreGraphics', 'CFNetwork', 'MobileCoreServices', 'StoreKit', 'AdSupport', 'CoreLocation', 'CoreTelephony', 'Security'
+  s.library = 'libz.tbd' 
   s.requires_arc = false
 
 end
